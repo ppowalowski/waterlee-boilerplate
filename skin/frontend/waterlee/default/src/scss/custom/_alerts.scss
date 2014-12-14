@@ -1,0 +1,9 @@
+.demo-notice{
+	text-align: center;
+}
+@media (max-width: $lap-start){
+	.demo-notice, 
+	.super-header .welcome{
+		display: none;
+	}
+}

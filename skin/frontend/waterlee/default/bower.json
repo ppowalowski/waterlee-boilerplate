@@ -1,0 +1,10 @@
+{
+  "name": "bonus",
+  "version": "0.0.1",
+  "private": "true",
+  "dependencies": {
+    "inuit.css": "~5.0.1",
+    "modernizr": ">= 2.7.2",
+    "components-font-awesome": "~4.2.0"
+  }
+}

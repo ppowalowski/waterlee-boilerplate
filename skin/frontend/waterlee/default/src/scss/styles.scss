@@ -1,0 +1,21 @@
+//Inuit.css
+
+	/*!turn off/on objects&abstractions not from _inuit.scss but from custom/_vars.scss */
+	@import "inuit";
+
+//Font awesome
+	
+	$fa-font-path: "../bower_components/components-font-awesome/fonts";
+	@import "../../bower_components/components-font-awesome/scss/font-awesome";
+
+
+// Custom scss
+	@import "custom/alerts";
+	@import "custom/breadcrumbs";
+	@import "custom/buttons";
+	@import "custom/grid";
+	@import "custom/header";
+	@import "custom/labels";
+	@import "custom/links";
+	@import "custom/lists";
+	@import "custom/nav";

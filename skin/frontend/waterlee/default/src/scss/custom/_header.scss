@@ -1,0 +1,16 @@
+.top-links{
+	text-align: right;
+}
+.quick-access{
+	text-align: right;
+	#search_mini_form{
+		margin-top: 2rem;
+	}
+}
+@media (max-width: $lap-start) {
+	.quick-access{	
+		#search_mini_form{
+			margin-top: 0.5rem;
+		}
+	}
+}

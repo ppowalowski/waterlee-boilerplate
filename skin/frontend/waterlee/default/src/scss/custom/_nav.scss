@@ -1,0 +1,27 @@
+// Main Menu
+
+#nav{
+	margin: 1rem;
+	li.level-top{
+		position: relative;
+		display: inline-block;
+		> a.level-top{
+			padding: 1rem;
+		}
+		ul.level0{
+			visibility: hidden;
+			position: absolute;
+			width: 130px;
+			left: 0;
+			top: 20px;
+			padding: 1rem;
+			background: #fff;
+		}
+		&:hover{
+			> ul.level0{
+				visibility: visible;
+			}
+		}		
+	}
+	
+}
