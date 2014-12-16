@@ -1,3 +1,7 @@
 .button {
 //	@extend .btn--large;
 }
+
+:focus{
+    outline: 0;
+  }

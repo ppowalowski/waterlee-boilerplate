@@ -30,7 +30,8 @@ gulp.task('sass', function() {
 // JS tasks
 gulp.task('js', function() {
     return gulp.src([
-            'bower_components/modernizr/modernizr.js'
+            'bower_components/modernizr/modernizr.js',
+            'src/js/jquery.flexslider.js'
         ])
         .pipe(gulpif(env === 'development', sourcemaps.init()))
         .pipe(gulpif(env === 'production', uglify()))
