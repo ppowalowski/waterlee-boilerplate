@@ -174,4 +174,21 @@
 			}	
 		}
 	}
+	.box-reviews{
+		@extend .grid;
+		.customer-reviews{
+			@extend .grid__item;
+			@extend .one-half;
+			@media (max-width: $lap-start){
+				width: 100%;
+			}
+		}
+		.form-add{
+			@extend .grid__item;
+			@extend .one-half;
+			@media (max-width: $lap-start){
+				width: 100%;
+			}
+		}
+	}
 }
