@@ -29,6 +29,8 @@
     	<div class="footer-links">
         <?php echo $this->getChildHtml() ?>
         </div>
+        <?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer_demo_links')->toHtml(); ?>
+        <?php echo $this->getChildHtml("footer_newsletter") ?>
         <address><?php echo $this->getCopyright() ?></address>
     </div>
 </div>

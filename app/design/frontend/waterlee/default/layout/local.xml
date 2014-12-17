@@ -15,13 +15,17 @@
 
 		<remove name="right.permanent.callout"/>
         <remove name="left.permanent.callout"/>
+		<remove name="left.newsletter" />
+		<remove name="currency" />
 
 
 		<reference name="header">
             <block type="directory/currency" name="currency_switcher" before="-" template="directory/currency.phtml"/>
         </reference>
 
-		<remove name="currency" />
+		<reference name="footer">
+            <block type="newsletter/subscribe" name="footer.newsletter" before="-" template="newsletter/subscribe.phtml"/>
+        </reference>
 
 	</default>
 
