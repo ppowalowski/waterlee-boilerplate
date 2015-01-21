@@ -52,7 +52,7 @@
 	}
 	.col-main{
 		@extend .grid__item;
-		@extend .six-twelfths;	
+		@extend .six-twelfths;
 	}
 }
 @media screen and (max-width: $lap-start){
@@ -89,7 +89,7 @@
 	}
 	.footer-links, address{
 		@extend .grid__item;
-		@extend .one-half;
+		@extend .one-whole;
 	}
 }
 
@@ -171,7 +171,7 @@
 				li{
 					display: inline-block;
 				}
-			}	
+			}
 		}
 	}
 	.box-reviews{

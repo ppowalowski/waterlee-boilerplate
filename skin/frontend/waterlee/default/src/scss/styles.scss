@@ -4,7 +4,7 @@
 	@import "inuit";
 
 //Font awesome
-	
+
 	$fa-font-path: "../bower_components/components-font-awesome/fonts";
 	@import "../../bower_components/components-font-awesome/scss/font-awesome";
 
@@ -14,6 +14,7 @@
 	@import "custom/breadcrumbs";
 	@import "custom/buttons";
 	@import "custom/flexslider";
+	@import "custom/footer";
 	@import "custom/img";
 	@import "custom/grid";
 	@import "custom/header";
