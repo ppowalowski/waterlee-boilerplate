@@ -1,7 +1,46 @@
 .button {
-//	@extend .btn--large;
+//@extend .btn--large;
+  background: #4a8ec2;
+  color: #2f4054;
+  padding: 6px 25px;
+  border: none;
+  -webkit-transition: .2s;
+  transition: .2s;
+  &:hover{
+    background: #2f4054;
+    color: #fff;
+  }
 }
 
 :focus{
-    outline: 0;
+  outline: 0;
+}
+
+// Qty increase/decrease
+.quantity{
+  width: 100px;
+  text-align: center;
+  position: relative;
+  .fa-plus,
+  .fa-minus{
+    cursor: pointer;
+    position: absolute;
+    top: 0.5rem;
   }
+  .fa-plus{
+    right: 0;
+  }
+  .fa-minus{
+    left: 0;
+  }
+}
+// Grid/list view buttons
+.view-mode{
+  strong.grid,
+  strong.list{
+    display: none;
+  }
+  a.grid{
+    display: inline;
+  }
+}

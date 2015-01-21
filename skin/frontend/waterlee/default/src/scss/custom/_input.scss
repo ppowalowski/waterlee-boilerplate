@@ -3,14 +3,14 @@
 .select-wrapper{
     position: relative;
     overflow: hidden;
-    border: 1px solid #ccc;	
+    border: 1px solid #ccc;
     .fa-angle-down{
 		position: absolute;
 		right: 10px;
 		top: 5px;
 		z-index: -1;
 	}
-}	
+}
 select{
     width: 100%;
     height: 25px;
@@ -18,28 +18,31 @@ select{
     border: none;
     outline: none;
     background: transparent;
-    -webkit-appearance: initial;	
+    -webkit-appearance: initial;
 }
 @-moz-document url-prefix() {
     select {
        width: 115%;
-       padding-right: 35px;	
-    }	
+       padding-right: 35px;
+    }
 }
-@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     select {
-       width: 115%;	
+       width: 115%;
     }
 }
 
 //Inputs
-
+input{
+  height: 30px;
+  padding: 0.5rem;
+  color: #888;
+}
+input.qty{
+  width: 50px;
+}
 input, textarea{
 	cursor: text;
 	background: #fff;
 	border: 1px solid #ccc;
 }
-
-
-
-

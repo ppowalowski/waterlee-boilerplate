@@ -16,12 +16,17 @@
 			top: 20px;
 			padding: 1rem;
 			background: #fff;
+			z-index: 10;
 		}
 		&:hover{
 			> ul.level0{
 				visibility: visible;
 			}
-		}		
+		}
 	}
-	
+	li.active{
+		& > a{
+			color: #2f4054;
+		}
+	}
 }
