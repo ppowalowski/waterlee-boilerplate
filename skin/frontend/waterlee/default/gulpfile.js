@@ -5,7 +5,6 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     sourcemaps = require('gulp-sourcemaps'),
     gulpif = require('gulp-if'),
-    notify = require('gulp-notify'),
     rimraf = require('gulp-rimraf'),
     imagemin = require('gulp-imagemin'),
     pngcrush = require('imagemin-pngcrush'),
@@ -21,10 +20,7 @@ gulp.task('sass', function() {
         .pipe(gulpif(env === 'production', sass({errLogToConsole: true})))
         .pipe(gulpif(env === 'production', minifycss()))
         .pipe(browserSync.reload({stream:true}))
-        .pipe(gulp.dest('css'))
-        .pipe(notify({
-            message: 'Successfully compiled SASS'
-        }));
+        .pipe(gulp.dest('css'));
 });
 
 // JS tasks
@@ -38,10 +34,8 @@ gulp.task('js', function() {
         .pipe(gulpif(env === 'production', uglify()))
         .pipe(concat('script.js'))
         .pipe(gulpif(env === 'development', sourcemaps.write()))
-        .pipe(gulp.dest('js'))
-        .pipe(notify({
-            message: 'Successfully compiled JS'
-        }));
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('js'));
 });
 
 //Image tasks
@@ -72,19 +66,19 @@ gulp.task('browser-sync', function() {
 
 // Watch
 gulp.task('watch', function() {
-   
+
         // Watch .scss files
-        gulp.watch('src/scss/**/*.scss', ['sass']);      
+        gulp.watch('src/scss/**/*.scss', ['sass']);
 
         // Watch .js files
-        gulp.watch('src/js/**/*.js', ['js', browserSync.reload]);
+        gulp.watch('src/js/**/*.js', ['js']);
 
         // Watch images
-        gulp.watch('src/images/**/*.*', ['image']);
+        //gulp.watch('src/images/**/*.*', ['image']);
 
 });
 
 // Default task
-gulp.task('default', ['browser-sync', 'sass', 'js', 'image', 'watch'], function() {
+gulp.task('default', ['browser-sync', 'sass', 'js', 'watch'], function() {
 
 });

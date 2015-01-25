@@ -1,14 +1,14 @@
 .button {
 //@extend .btn--large;
-  background: #4a8ec2;
-  color: #2f4054;
+  background: $brand-color;
+  color: $secondary-color;
   padding: 6px 25px;
   border: none;
   -webkit-transition: .2s;
   transition: .2s;
   &:hover{
-    background: #2f4054;
-    color: #fff;
+    background: $secondary-color;
+    color: white;
   }
 }
 

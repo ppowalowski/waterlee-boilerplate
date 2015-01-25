@@ -12,7 +12,7 @@
 	}
 }
 select{
-    width: 100%;
+    width: 115%;
     height: 25px;
     padding: 0 25px 0 5px;
     border: none;
@@ -28,14 +28,13 @@ select{
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     select {
-       width: 115%;
+       width: 140%;
     }
 }
 
 //Inputs
 input{
   height: 30px;
-  padding: 0.5rem;
   color: #888;
 }
 input.qty{
@@ -43,6 +42,6 @@ input.qty{
 }
 input, textarea{
 	cursor: text;
-	background: #fff;
-	border: 1px solid #ccc;
+	background: white;
+	border: 1px solid $base-ui-color;
 }
