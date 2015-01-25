@@ -2,30 +2,37 @@
 
 <layout>
 	<default>
-	
+
 		<reference name="head">
 		<action method="removeItem"><type>skin_css</type><name>css/print.css</name></action>
 		<action method="removeItem"><type>skin_css</type><name>css/widgets.css</name></action>
 		<action method="removeItem"><type>js</type><name>varien/menu.js</name></action>
-	   
+
 	    <!-- Required javascripts are concatenated into script.js / see gulpfile.js -->
         <action method="addItem"><type>skin_js</type><name>js/script.js</name><params/></action>
         </reference>
 
 
 		<remove name="right.permanent.callout"/>
-        <remove name="left.permanent.callout"/>
+    <remove name="left.permanent.callout"/>
 		<remove name="left.newsletter" />
 		<remove name="currency" />
 
 
 		<reference name="header">
             <block type="directory/currency" name="currency_switcher" before="-" template="directory/currency.phtml"/>
-        </reference>
+						<block type="checkout/cart" name="myCart" before="-" template="checkout/cart/topCart.phtml"/>
+    </reference>
+
+		<!-- Add/Remove Top Links -->
+		<reference name="root">
+					<!--<remove name="top.links" />-->
+					<remove name="checkout_cart_link"/>
+		</reference>
 
 		<reference name="footer">
             <block type="newsletter/subscribe" name="footer.newsletter" before="-" template="newsletter/subscribe.phtml"/>
-        </reference>
+    </reference>
 
 	</default>
 
@@ -44,7 +51,3 @@
 	</catalog_product_view>
 
 </layout>
-
-
-
-

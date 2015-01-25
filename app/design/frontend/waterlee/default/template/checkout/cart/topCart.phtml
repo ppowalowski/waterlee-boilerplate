@@ -1,0 +1,29 @@
+<div class="top--cart">
+  <a href="#"><i class="fa fa-shopping-cart fa-2x"></i></a>
+
+  <div class="top--cart--hidden">
+    <?php
+    $count = $this->helper('checkout/cart')->getSummaryCount();  //get total items in cart
+    $total = $this->helper('checkout/cart')->getQuote()->getGrandTotal(); //get total price
+    ?>
+    <?php if($count == 0):?>
+      <a class="cartgo" href="<?php echo $this->getUrl('checkout/cart') ?>"><?php echo $this->__('You have no items in your shopping cart.') ?></a>
+    <?php else: ?>
+
+
+      <?php foreach($this->getItems() as $_item): ?>
+        <?php echo $this->getItemHtml($_item) ?>
+      <?php endforeach ?>
+
+    <?php endif; ?>
+    <p class="price--total"><span>SUBTOTAL:</span>
+      <?php echo $this->helper('checkout')->formatPrice(Mage::getSingleton('checkout/cart')->getQuote()->getSubtotal()); ?>
+    </p>
+
+    <a class="link--cart" href="<?php echo $this->getUrl('checkout/cart'); ?>">
+      <?php echo $this->__('View Shopping Cart'); ?></a>
+      <a class="link--checkout" href="<?php echo $this->getUrl('checkout') ?>"><?php echo $this->__('Checkout') ?></a>
+    </div>
+
+
+</div>

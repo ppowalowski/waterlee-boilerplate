@@ -1,0 +1,26 @@
+.top--cart{
+  position: relative;
+  top: 0.4em;
+  display: inline-block;
+  .top--cart--hidden{
+    visibility: hidden;
+    position: absolute;
+    background: white;
+    width: 350px;
+    padding: 1em;
+    border: 1px solid $base-ui-color;
+    top: 2em;
+    right: 0;
+    opacity: 0;
+    z-index: 10;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+  }
+  &:hover{
+    .top--cart--hidden{
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+}

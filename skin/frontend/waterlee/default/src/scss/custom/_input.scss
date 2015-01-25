@@ -5,16 +5,17 @@
     overflow: hidden;
     border: 1px solid #ccc;
     .fa-angle-down{
-		position: absolute;
-		right: 10px;
-		top: 5px;
-		z-index: -1;
-	}
+  		position: absolute;
+  		padding: 5px;
+      right: 0;
+  		top: 0;
+  		z-index: -1;
+	  }
 }
 select{
     width: 115%;
     height: 25px;
-    padding: 0 25px 0 5px;
+    padding: 0 2.5em 0 0;
     border: none;
     outline: none;
     background: transparent;
@@ -22,13 +23,14 @@ select{
 }
 @-moz-document url-prefix() {
     select {
-       width: 115%;
-       padding-right: 35px;
+       width: 150%;
+       padding: 0 4.5em 0 0;
     }
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     select {
-       width: 140%;
+       width: 200%;
+       padding: 0 4em 0 0;
     }
 }
 
