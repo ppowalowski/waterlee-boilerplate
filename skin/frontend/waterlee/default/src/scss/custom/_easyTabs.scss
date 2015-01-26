@@ -1,0 +1,18 @@
+.product-view{
+  .tabs{
+    margin: 0;
+    li{
+      display: inline-block;
+      padding: 0 1em 0 0;
+    }
+    li.active{
+      a{
+        color: $secondary-color;
+      }
+    }
+    & + .padder{
+      border: 1px solid $base-ui-color;
+      padding: 1em;
+    }
+  }
+}
