@@ -45,3 +45,18 @@
     display: inline;
   }
 }
+
+//Login form
+#login-form{
+  .registered-users{
+    .button{
+      float: left;
+    }
+  }
+  .new-users{
+    .button{
+      position: relative;
+      bottom: 130px;
+    }
+  }
+}

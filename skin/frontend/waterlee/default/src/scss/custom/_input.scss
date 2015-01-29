@@ -34,6 +34,18 @@ select{
     }
 }
 
+//Advanced search
+#advanced-search-list{
+  select{
+    width: 100%;
+    height: 4em;
+    border: 1px solid $base-ui-color;
+  }
+  .fa-angle-down{
+    display: none;
+  }
+}
+
 //Inputs
 input{
   height: 30px;

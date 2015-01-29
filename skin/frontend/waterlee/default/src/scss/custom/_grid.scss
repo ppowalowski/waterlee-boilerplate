@@ -192,3 +192,18 @@
 		}
 	}
 }
+//Login Form
+.account-login{
+	#login-form{
+		@extend .grid;
+		.new-users{
+			@extend .grid__item;
+			@extend .one-half;
+			float: right;
+		}
+		.registered-users{
+			@extend .grid__item;
+			@extend .one-half;
+		}
+	}
+}
