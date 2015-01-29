@@ -1,0 +1,28 @@
+//Responsive cart table
+
+@media (max-width: 750px) {
+	#shopping-cart-table{
+		thead{
+			display: none;
+		}
+		tbody{
+			td{
+				display: block;
+				text-align: center;
+			}
+			dl{
+				dt{
+					display: inline-block;
+					padding: 0 0 0 1em;
+				}
+				dd{
+					display: inline-block;
+					padding: 0 1em 0 0;
+				}
+			}
+			.even{
+				background: #fcfcfc;
+			}
+		}
+	}
+}
