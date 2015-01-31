@@ -1,6 +1,6 @@
 //Responsive cart table
 
-@media (max-width: 750px) {
+@media (max-width: $lap-start) {
 	#shopping-cart-table{
 		thead{
 			display: none;
@@ -23,6 +23,9 @@
 			.even{
 				background: #fcfcfc;
 			}
+		}
+		.btn-update{
+			margin: 1em 0;
 		}
 	}
 }

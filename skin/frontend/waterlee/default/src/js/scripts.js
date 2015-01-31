@@ -61,4 +61,25 @@ jQuery(document).ready(function() {
     jQuery('.top--cart').removeClass('active');    
   });
 
+  //Scroll to top
+
+  jQuery('.footer-container').after('<div class="scrollToTop"></div>');
+  jQuery('.scrollToTop').append('<i class="fa fa-chevron-circle-up fa-2x"></i>');
+  jQuery(window).scroll(function(){
+    if (jQuery(this).scrollTop() > 100) {
+      jQuery('.scrollToTop').fadeIn();
+    } else {
+      jQuery('.scrollToTop').fadeOut();
+    }
+  });
+  
+  //Click event to scroll to top
+  jQuery('.scrollToTop').click(function(){
+    jQuery('html, body').animate({scrollTop : 0},800);
+    return false;
+  });
+
 });
+
+
+

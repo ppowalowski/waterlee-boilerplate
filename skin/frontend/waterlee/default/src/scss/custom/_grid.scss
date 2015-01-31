@@ -200,10 +200,17 @@
 			@extend .grid__item;
 			@extend .one-half;
 			float: right;
+			@media (max-width: $lap-start){		
+				width: 100%;
+			}
 		}
 		.registered-users{
 			@extend .grid__item;
 			@extend .one-half;
+			@media (max-width: $lap-start){		
+				padding-top: 2em;
+				width: 100%;
+			}
 		}
 	}
 }
