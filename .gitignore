@@ -37,13 +37,6 @@
 /skin/*
 !/skin/frontend/
 /skin/frontend/*
-!/skin/frontend/base/
-/skin/frontend/base/*
-!/skin/frontend/base/default/
-/skin/frontend/base/default/*
-!/skin/frontend/base/default/css/
-/skin/frontend/base/default/css/*
-!/skin/frontend/base/default/css/easytabs.css
 !/skin/frontend/waterlee-boilerplate/
 /skin/frontend/waterlee-boilerplate/default/bower_components/
 /skin/frontend/waterlee-boilerplate/default/node_modules/
