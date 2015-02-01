@@ -13,27 +13,30 @@
         <action method="addItem"><type>skin_js</type><name>js/script.js</name><params/></action>
         </reference>
 
-
 		<remove name="right.permanent.callout"/>
-    <remove name="left.permanent.callout"/>
+    	<remove name="left.permanent.callout"/>
 		<remove name="left.newsletter" />
 		<remove name="currency" />
-
 
 		<reference name="header">
             <block type="directory/currency" name="currency_switcher" before="-" template="directory/currency.phtml"/>
 						<block type="checkout/cart" name="myCart" before="-" template="checkout/cart/topCart.phtml"/>
-    </reference>
+    	</reference>
 
 		<!-- Add/Remove Top Links -->
 		<reference name="root">
 					<!--<remove name="top.links" />-->
 					<remove name="checkout_cart_link"/>
+					<remove name="global_messages" />
+		</reference>
+
+		<reference name="after_body_start">
+			<block type="core/template" name="inchoo_global_messages" template="core/inchoo_global_messages.phtml" before="-" />
 		</reference>
 
 		<reference name="footer">
             <block type="newsletter/subscribe" name="footer.newsletter" before="-" template="newsletter/subscribe.phtml"/>
-    </reference>
+    	</reference>
 
 	</default>
 
@@ -47,7 +50,6 @@
                         </block>
                     </block>
                 </block>
-
 		</reference>
 	</catalog_product_view>
 

@@ -7,3 +7,31 @@
 		display: none;
 	}
 }
+
+//Inchoo global messages
+
+#inchoo_global_messages{
+	position: relative;
+	z-index: 9999;
+	height: 2em;
+	background: $base-ui-color;
+	li{
+		padding: 0.1em 0.5em;
+	}
+	.fa-close{
+		position: absolute;
+		top: 8px;
+		right: 20px;
+	}
+	@media (max-width: $lap-start){
+		height: 3.5em;
+		.fa-close{
+			top: 20px;
+			right: 20px;
+		}	
+		.messages{
+			width: 90%;	
+		}
+	}
+}
+
