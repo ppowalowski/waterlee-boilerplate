@@ -7,7 +7,7 @@ jQuery(document).ready(function() {
   jQuery("select").after("<i class='fa fa-angle-down'></i>");
 
   jQuery("#advanced-search-list select").unwrap();
-
+  jQuery("#region_id").unwrap();
 
   //Flexslider
 
@@ -78,6 +78,55 @@ jQuery(document).ready(function() {
     jQuery('html, body').animate({scrollTop : 0},800);
     return false;
   });
+
+
+  // media query event handler
+  if (matchMedia) {
+    var mq = window.matchMedia("(min-width: 640px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+  }
+
+  // media query change
+  function WidthChange(mq) {
+
+    if (mq.matches) {
+      // window width is at least 500px
+        jQuery('.gallery-image.visible').elevateZoom();
+        jQuery('.more-views').click(function(){
+          jQuery('.gallery-image.visible').elevateZoom();
+        })
+
+    }
+    else {
+      // window width is less than 500px
+      console.log("manji sam");
+       jQuery('.gallery-image.visible').elevateZoom({
+          constrainType:"height",
+          constrainSize:274,       
+          zoomType: "lens",
+          containLensZoom: true,
+        cursor: "pointer",
+        galleryActiveClass: "active",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+          });
+
+        jQuery('.more-views').click(function(){
+          jQuery('.gallery-image.visible').elevateZoom({
+          constrainType:"height",
+          constrainSize:274,       
+          zoomType: "lens",
+          containLensZoom: true,
+        cursor: "pointer",
+        galleryActiveClass: "active",
+        zoomWindowFadeIn: 500,
+        zoomWindowFadeOut: 750
+          });
+        })    
+    }
+
+  }
 
 });
 

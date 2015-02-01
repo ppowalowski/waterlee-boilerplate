@@ -12,3 +12,14 @@
 		background: url(../images/bkg_rating.gif) 0 100% repeat-x;
 	}
 }
+
+//Product image gallery
+
+.product-image-gallery{
+	.gallery-image{
+		display: none;
+	}
+	.gallery-image.visible{
+		display: block;
+	}
+}

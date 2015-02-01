@@ -46,6 +46,23 @@ select{
   }
 }
 
+//Cart
+#region_id{
+  & + .fa-angle-down{
+    display: none;
+  }
+}
+
+//Checkout
+#billing-new-address-form,
+#shipping-new-address-form{
+  li:nth-child(5){
+    .select-wrapper{
+      display: none;
+    }
+  }
+}
+
 //Inputs
 input{
   height: 30px;

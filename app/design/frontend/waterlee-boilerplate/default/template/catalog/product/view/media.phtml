@@ -35,24 +35,46 @@
     $_helper = $this->helper('catalog/output');
 ?>
 <p class="product-image product-image-zoom">
-    <?php
-        $_img = '<img id="image" src="'.$this->helper('catalog/image')->init($_product, 'image').'" alt="'.$this->escapeHtml($this->getImageLabel()).'" title="'.$this->escapeHtml($this->getImageLabel()).'" />';
-        echo $_helper->productAttribute($_product, $_img, 'image');
-    ?>
+     <div class="product-image-gallery">
+        <img id="image-main"
+             class="gallery-image visible"
+             src="<?php echo $this->helper('catalog/image')->init($_product, 'image') ?>"
+             alt="<?php echo $this->escapeHtml($this->getImageLabel()) ?>"
+             title="<?php echo $this->escapeHtml($this->getImageLabel()); ?>" />
+
+        <?php
+            $i=0;
+            foreach ($this->getGalleryImages() as $_image):
+                $_imageUrl = $this->helper('catalog/image')
+                                  ->init($_product, 'image', $_image->getFile())
+                                  ->keepFrame(false)
+                                  ->constrainOnly(true)
+                                  ->resize(1200);
+        ?>
+            <img id="image-<?php echo $i; ?>"
+                 class="gallery-image"
+                 src="<?php echo $_imageUrl; ?>"
+                 data-zoom-image="<?php echo  $_imageUrl; ?>" />
+        <?php
+            $i++;
+            endforeach;
+        ?>
+    </div>
 </p>
 
 <?php if (count($this->getGalleryImages()) > 0): ?>
-<div class="product-flexslider more-views">
-    <h2><?php echo $this->__('More Views') ?></h2>
-    <ul class="slides">
-    <?php foreach ($this->getGalleryImages() as $_image): ?>
-        <li>
-            <a href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>" title="<?php echo $_product->getName();?>" onclick="$('image').src = this.href; return false;">
-  <!-- The below should remain the same as before -->
-  <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(70, 70); ?>" alt="<?php echo $this->htmlEscape($_image->getLabel()) ?>" title="<?php echo $this->htmlEscape($_image->getLabel()) ?>"/>
-</a>
-        </li>
-    <?php endforeach; ?>
-    </ul>
-</div>
+    <div class="product-flexslider more-views">
+        <h5><?php echo $this->__('More Views') ?></h5>
+        <div id="carousel">
+        <ul class="slides">
+            <?php foreach ($this->getGalleryImages() as $_image): ?>
+                <li>
+                    <a class="th" href="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'image', $_image->getFile()); ?>" title="<?php echo $_product->getName();?>" onclick="$('image-main').src = this.href; return false;">
+                        <img src="<?php echo $this->helper('catalog/image')->init($this->getProduct(), 'thumbnail', $_image->getFile())->resize(70, 70); ?>" alt="<?php echo $this->htmlEscape($_image->getLabel()) ?>" title="<?php echo $this->htmlEscape($_image->getLabel()) ?>"/>
+                    </a>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+        </div>
+    </div>
 <?php endif; ?>
