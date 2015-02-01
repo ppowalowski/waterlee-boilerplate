@@ -63,6 +63,18 @@ select{
   }
 }
 
+// Language/Currency
+.form-language{
+  .select-wrapper{
+    width: 100px;
+  }
+}
+.block-currency{
+  .select-wrapper{
+    width: 100px;
+  }
+}
+
 //Inputs
 input{
   height: 30px;
