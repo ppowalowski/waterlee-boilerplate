@@ -1,14 +1,18 @@
-//Responsive cart table
+//Responsive tables
 
 @media (max-width: $lap-start) {
-	#shopping-cart-table{
+	#shopping-cart-table,
+	#wishlist-table{
 		thead{
 			display: none;
 		}
 		tbody{
+			tr{
+				position: relative;
+			}
 			td{
-				display: block;
-				text-align: center;
+				display: inline-block;
+				text-align: left;
 			}
 			dl{
 				dt{
@@ -23,9 +27,6 @@
 			.even{
 				background: #fcfcfc;
 			}
-		}
-		.btn-update{
-			margin: 1em 0;
 		}
 	}
 }

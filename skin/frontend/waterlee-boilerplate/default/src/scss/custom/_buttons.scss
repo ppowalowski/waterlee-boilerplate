@@ -85,3 +85,19 @@
     display: none;
   }
 }
+
+// Tables
+.my-wishlist{
+  .buttons-set{
+    button{
+        margin: 1em 1em 0 0;
+    }
+  }
+}
+.cart-table{
+  tfoot{
+    button{
+        margin: 1em 1em 0 0;      
+    }
+  }
+}
