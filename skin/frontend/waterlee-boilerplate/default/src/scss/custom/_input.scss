@@ -64,16 +64,13 @@ select{
 }
 
 // Language/Currency
-.form-language{
+.form-language, .block-currency, .store-switcher{
+  display: inline-block;
   .select-wrapper{
     width: 100px;
   }
 }
-.block-currency{
-  .select-wrapper{
-    width: 100px;
-  }
-}
+
 
 //Inputs
 input{

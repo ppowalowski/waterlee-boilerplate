@@ -75,13 +75,13 @@
 }
 .super-header, .header, .footer{
 	@extend .grid;
-	.welcome, .form-language, .block-currency{
+	.welcome, .form-language, .block-currency, .store-switcher{
 		@extend .grid__item;
 		@extend .two-twelfths;
 	}
 	.top-links{
 		@extend .grid__item;
-		@extend .six-twelfths;
+		@extend .four-twelfths;
 	}
 	.div-logo{
 		@extend .grid__item;
