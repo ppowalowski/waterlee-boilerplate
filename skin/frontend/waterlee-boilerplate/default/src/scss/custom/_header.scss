@@ -1,3 +1,4 @@
+
 .super-header{
 	height: 60px;
 }
@@ -9,12 +10,18 @@
 	#search_mini_form{
 		margin-top: 2rem;
 		display: inline-block;
+		@media (max-width: $lap-start){
+			margin-top: 0;
+		}
 	}
 }
-@media (max-width: $lap-start) {
-	.quick-access{
-		#search_mini_form{
-			margin-top: 0.5rem;
-		}
+.super-header{
+	@media (max-width: $lap-start) {
+		display: none;	
+	}
+}
+.mm-offcanvas{
+	.super-header{
+		display: block;
 	}
 }

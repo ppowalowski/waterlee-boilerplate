@@ -96,11 +96,9 @@ jQuery(document).ready(function() {
         jQuery('.more-views').click(function(){
           jQuery('.gallery-image.visible').elevateZoom();
         })
-
     }
     else {
       // window width is less than 500px
-      console.log("manji sam");
        jQuery('.gallery-image.visible').elevateZoom({
           constrainType:"height",
           constrainSize:274,       
@@ -127,6 +125,13 @@ jQuery(document).ready(function() {
     }
 
   }
+
+  // Jquery mmenu
+  jQuery('.header').append('<a href="#menu" class="mmenu-btn"><i class="fa fa-align-justify fa-2x"></i></a>');
+
+  jQuery(function() {
+    jQuery('nav#menu').mmenu();
+  });
 
 });
 

@@ -29,6 +29,7 @@ gulp.task('js', function() {
             'bower_components/modernizr/modernizr.js',
             'src/js/jquery.flexslider.js',
             'src/js/elevateZoom.js',
+            'src/js/jquery.mmenu.js',
             'src/js/scripts.js'
         ])
         .pipe(gulpif(env === 'development', sourcemaps.init()))

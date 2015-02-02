@@ -25,17 +25,23 @@
 
 		<!-- Add/Remove Top Links -->
 		<reference name="root">
-					<!--<remove name="top.links" />-->
-					<remove name="checkout_cart_link"/>
-					<remove name="global_messages" />
+			<!--<remove name="top.links" />-->
+			<remove name="checkout_cart_link"/>
+			<remove name="global_messages" />
+			
 		</reference>
 
 		<reference name="after_body_start">
 			<block type="core/template" name="inchoo_global_messages" template="core/inchoo_global_messages.phtml" before="-" />
 		</reference>
 
+		<reference name="mmenu">
+			<block type="directory/currency" name="mmenu_currency_switcher" output="toHtml" before="-" template="directory/mmenu_currency.phtml"/>
+		</reference>
+
 		<reference name="footer">
             <block type="newsletter/subscribe" name="footer.newsletter" before="-" template="newsletter/subscribe.phtml"/>
+            <block type="page/html" name="mmenu" before="-" template="page/html/mmenu.phtml"/>
     	</reference>
 
 	</default>

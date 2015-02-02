@@ -20,6 +20,11 @@
       display: block;
     }
   }
+  @media (max-width: $lap-start){
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
 }
 .top--cart.active{
   .top--cart--hidden{

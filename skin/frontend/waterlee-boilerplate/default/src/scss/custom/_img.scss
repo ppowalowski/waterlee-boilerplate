@@ -27,7 +27,15 @@
 //Logo
 
 .div-logo{
+	height: 80px;
 	h1.logo{
 		margin-bottom: 0;
+	}
+	img{
+		margin-bottom: 0;
+		@media (max-width: $lap-start){
+			position: relative;
+			left: 60px;		
+		}
 	}
 }
