@@ -1,6 +1,6 @@
 {
   "name": "waterlee-boilerplate",
-  "version": "1.9.1",
+  "version": "2.0.0",
   "private": "true",
   "dependencies": {
     "inuit.css": "~5.0.1",
