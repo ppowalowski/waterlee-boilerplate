@@ -127,7 +127,6 @@ jQuery(document).ready(function() {
   }
 
   // Jquery mmenu
-  jQuery('.header').append('<a href="#menu" class="mmenu-btn"><i class="fa fa-align-justify fa-2x"></i></a>');
 
   jQuery(function() {
     jQuery('nav#menu').mmenu();

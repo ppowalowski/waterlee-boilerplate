@@ -28,14 +28,20 @@
 
 .div-logo{
 	height: 80px;
-	h1.logo{
+	h1.logo, img{
 		margin-bottom: 0;
 	}
-	img{
-		margin-bottom: 0;
-		@media (max-width: $lap-start){
-			position: relative;
-			left: 60px;		
+}
+@media (max-width: $lap-start){
+	.header{
+		.div-logo{
+			height: auto;
+			.logo{
+				img{
+					width: 180px;
+				}
+				text-align: center;
+			}
 		}
 	}
 }
