@@ -5,8 +5,9 @@
 ###It includes:
 
  - [Inuit.css](https://github.com/csswizardry/inuit.css/) - Powerful, scalable, Sass-based, BEM, OOCSS framework.
- - Font Awesome
+ - [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
  - Modernizr
+ - jQuey 2.1.1
  - Easy tabs Magento extension
  - Responsive tables & grid
  - Top Cart

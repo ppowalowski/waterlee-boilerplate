@@ -1,23 +1,9 @@
 <nav id="menu">
-
-<ul>
-	<li><?php echo $this->getChildHtml('mmenu_store_switcher') ?></li>
-	<li><?php echo $this->getChildHtml('mmenu_currency_switcher') ?></li>
-	<li><?php echo $this->getChildHtml('mmenu_language_switcher') ?></li>
-	<li><a href="#about">About us</a>
-		<ul>
-			<li><a href="#about/history">History</a></li>
-			<li><a href="#about/team">The team</a>
-				<ul>
-					<li><a href="#about/team/management">Management</a></li>
-					<li><a href="#about/team/sales">Sales</a></li>
-					<li><a href="#about/team/development">Development</a></li>
-				</ul>
-			</li>
-			<li><a href="#about/address">Our address</a></li>
-		</ul>
-	</li>
-	<li><a href="#contact">Contact</a></li>
-</ul>
-
+<div class="my-menu">
+<?php echo $this->getChildHtml('mmenu_store_switcher') ?>
+<?php echo $this->getChildHtml('mmenu_currency_switcher') ?>
+<?php echo $this->getChildHtml('mmenu_language_switcher') ?>
+<?php echo $this->getChildHtml('mmenu_links') ?>
+<?php echo $this->getChildHtml('mmenu_topnav') ?>
+</div>
 </nav>

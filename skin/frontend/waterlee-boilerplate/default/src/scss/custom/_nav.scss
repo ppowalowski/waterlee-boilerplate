@@ -2,6 +2,11 @@
 .nav-container{
 	padding: 1em 0;
 }
+@media (max-width: $lap-start){
+	.nav-container{
+		display: none;
+	}
+}
 #nav{
 	display: table-row;
 	margin: 1rem;
