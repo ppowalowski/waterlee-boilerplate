@@ -19,11 +19,8 @@
  - [Flexslider](http://www.woothemes.com/flexslider/)
  - Increase/Decrease quantity buttons
  - Scroll to top
+ - [jQuery.mmenu](https://github.com/BeSite/jQuery.mmenu) 
  - Modman support
-
-###Coming soon
-
- - Mobile menu
 
 ###Things you'll need to have:
 
