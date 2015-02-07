@@ -35,6 +35,7 @@
     left: 0;
   }
 }
+
 // Grid/list view buttons
 .view-mode{
   strong.grid,
@@ -46,33 +47,7 @@
   }
 }
 
-//Login form
-#login-form{
-  .registered-users{
-    .buttons-set{
-      float: left;
-       @media (max-width: $lap-start){   
-        position: relative;
-        bottom: 80px;
-      }
-      button{
-        float:left;
-      }
-    }
-  }
-  .new-users{
-    .button{
-      position: relative;
-      bottom: 130px;
-      @media (max-width: $lap-start){   
-        bottom: 340px;
-      }
-    }
-  }
-}
-
 //Scroll to top
-
 .scrollToTop{
   display: none;
   position: fixed;
