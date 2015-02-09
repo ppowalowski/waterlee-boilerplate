@@ -41,7 +41,7 @@ $ gulp
 ```
  - In gulpfile.js you can easily switch between development and production environment.
  - Here is the inuit.css unofficial site that will help you to get started with it [http://terabytenz.github.io/inuit.css-kitchensink/#media](http://terabytenz.github.io/inuit.css-kitchensink/#media)
- - Inuit components are turning on/off at the end of _vars.scss file which can be found @ src/scss/custom
+ - Inuit components are turned on/off at the end of _vars.scss file which can be found @ src/scss/custom
 
 That's it. We tried to organise this thing and put features you will gonna use. Yes, it's ugly and it's small, like boilerplate needs to be. Less things to override, the better. That's why we have choosen Foundation over Bootstrap, Inuit.css over Foundation.
 
