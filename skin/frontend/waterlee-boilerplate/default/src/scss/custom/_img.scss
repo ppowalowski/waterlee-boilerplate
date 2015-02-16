@@ -26,7 +26,7 @@
 
 //Logo
 
-.div-logo{
+.header__logo{
 	height: 80px;
 	h1.logo, img{
 		margin-bottom: 0;
@@ -34,7 +34,7 @@
 }
 @media (max-width: $lap-start){
 	.header{
-		.div-logo{
+		.header__logo{
 			text-align: center;
 			height: auto;
 			.logo{

@@ -19,14 +19,14 @@
       <?php endforeach ?>
 
     <?php endif; ?>
-    <p class="price--total"><span>SUBTOTAL:</span>
+    <p class="top--cart__price"><span>SUBTOTAL:</span>
       <?php echo $this->helper('checkout')->formatPrice(Mage::getSingleton('checkout/cart')->getQuote()->getSubtotal()); ?>
     </p>
 
-    <a class="link--cart" href="<?php echo $this->getUrl('checkout/cart'); ?>">
+    <a class="top--cart__view" href="<?php echo $this->getUrl('checkout/cart'); ?>">
       <?php echo $this->__('View Shopping Cart'); ?></a>
-      <a class="link--checkout" href="<?php echo $this->getUrl('checkout') ?>"><?php echo $this->__('Checkout') ?></a>
-    </div>
+      <a class="checkout--btn" href="<?php echo $this->getUrl('checkout') ?>"><?php echo $this->__('Checkout') ?></a>
+  </div>
 
 
 </div>

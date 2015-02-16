@@ -83,7 +83,7 @@
 		@extend .grid__item;
 		@extend .four-twelfths;
 	}
-	.div-logo{
+	.header__logo{
 		@extend .grid__item;
 		@extend .three-eighths;
 	}
@@ -99,7 +99,7 @@
 
 @media (max-width: $lap-start){
 	.header{
-		.div-logo, .quick-access{
+		.header__logo, .quick-access{
 			width: 100%;
 		}
 	}
@@ -205,5 +205,11 @@
 				width: 100%;
 			}
 		}
+	}
+}
+//test
+.toolbar{
+	.pager{
+		padding-left: 0;
 	}
 }
