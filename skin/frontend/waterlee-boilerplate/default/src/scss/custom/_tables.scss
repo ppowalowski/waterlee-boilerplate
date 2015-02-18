@@ -2,7 +2,8 @@
 
 @media (max-width: $lap-start) {
 	#shopping-cart-table,
-	#wishlist-table{
+	#wishlist-table,
+	#my-tags-table{
 		thead{
 			display: none;
 		}
@@ -28,5 +29,10 @@
 				background: #fcfcfc;
 			}
 		}
+	}
+	#my-orders-table,
+	#my-downloadable-products-table{
+		overflow-x: auto;
+		display: block;
 	}
 }
