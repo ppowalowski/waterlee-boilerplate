@@ -1,0 +1,24 @@
+//Category view
+.toolbar{
+	.pager{
+		padding-left: 0;
+	}
+	label{
+		display: block;
+		float: left;
+	}
+	.select-wrapper{
+		width: 100px;
+		display: block;
+		float: left;
+	}
+}
+
+
+//Product view
+#customer-reviews{
+	.customer-reviews,
+	.form-add{
+		padding: 0;
+	}
+}
