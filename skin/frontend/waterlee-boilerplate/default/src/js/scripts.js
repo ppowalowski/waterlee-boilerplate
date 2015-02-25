@@ -1,13 +1,10 @@
-
 jQuery(document).ready(function() {
 
   // Select-wrapper for select elements
 
   jQuery("select").wrap("<div class='select-wrapper'></div>");
   jQuery("select").after("<i class='fa fa-angle-down'></i>");
-
   jQuery("#advanced-search-list select").unwrap();
-  jQuery("#region_id").unwrap();
 
   //Flexslider
 
