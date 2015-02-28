@@ -1,7 +1,3 @@
 #JakeSharp_Waterlee
-app/code/community/TM/*		                                         app/code/community/TM/
-app/etc/modules/*.xml                                                app/etc/modules/
-app/design/frontend/base/default/layout/easytabs.xml				 app/design/frontend/base/default/layout/easytabs.xml
-app/design/frontend/base/default/template/easytabs/*.phtml			 app/design/frontend/base/default/template/easytabs/
 app/design/frontend/waterlee-boilerplate/default                     app/design/frontend/waterlee-boilerplate/default
 skin/frontend/waterlee-boilerplate/default                           skin/frontend/waterlee-boilerplate/default
