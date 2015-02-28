@@ -23,15 +23,20 @@
  - Modman support
 
 ###Things you'll need to have:
-
+ - [Modman](https://github.com/colinmollenhour/modman) 
  - [NodeJS](http://nodejs.org/) - download & install
  - [Gulp](https://github.com/gulpjs/gulp) - `$ npm install -g gulp`
  - [Bower](http://bower.io/) - `$ npm install -g bower`
 
 ###Installation:
 
- - Clone this repo or download it
- - Inside the skin/frontend/waterlee-boilerplate/default run `npm install` to install node_modules locally
+ - Run `modman init` in magento root dir. Modman creates this way .modman folder in which you will have your modules installed.
+ - Install modules with modman that you want
+ - We guess there is possibility that you want to install our new boilerplate, so you'll need to type something like this:
+   `modman clone waterlee-boilerplate -b wip-2.0 https://github.com/zeljkoprsa/waterlee-boilerplate.git`
+ - You'll also want TMeasytabs installed because it's a great Magento extension: `modman clone easytabs https://github.com/tmhub/easytabs.git`
+ - To make things work with modman, you need to have symlinks turned on. This option is in Magento admin>sys>config>advanced>developer>Template Settings.
+ - Inside the waterlee-boilerplate/skin/frontend/waterlee-boilerplate/default run `npm install` to install node_modules locally
  - Run `bower install` to install bower_components
 
 ####Usage:
