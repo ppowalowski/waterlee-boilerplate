@@ -34,9 +34,11 @@
   border-color: #e5e5e5;
   height: 2.5rem;
 }
-.site-header {
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+@media #{$medium-up} {
+    .site-header {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
 }
 .lang-border {
   border-left: 1px solid #e5e5e5;
@@ -81,27 +83,24 @@ select, select:hover {
   transition: background-color 300ms ease-out;
 }
 
-@media only screen and (max-width: 40em) {
-  .acc-button {
-    right: 5.4rem;
+/*SMALL*/
+.acc-button {
+  right: 5.4rem;
 
-  }
-  .super-header {
-    height: 2.45rem;
-  }
-  .site-identity {
-    padding-left: 0;
-  }
-  .site-search {
-    padding-top: 1rem;
-    padding-left: 0;
-    padding-right: 0;
-  }
 }
-@media only screen and (min-width: 40.063em) and (max-width: 64em) {
-  .super-header-content {
-    
-  }
+.super-header {
+  height: 2.45rem;
+}
+.site-identity {
+  padding-left: 0;
+}
+.site-search {
+  padding-top: 1rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media #{$medium-up} {
   .site-identity {
     padding-left: 0;
   }
